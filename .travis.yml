@@ -36,6 +36,7 @@ install:
 
 script:
   - coverage run setup.py test
+  - cat .coverage
 
 
-after_success: coveralls
+after_success: coveralls -v
